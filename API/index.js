@@ -18,9 +18,12 @@ app.get('/api/201',
     (req, res) => {
 
         console.log('Call to /api/201');
-        console.log('Returning 201');
 
-        res.status(201).json();
+        setTimeout(() => {
+            console.log('Returning 201');
+            res.status(201).json();
+        }, 2000);
+
     }
 );
 
