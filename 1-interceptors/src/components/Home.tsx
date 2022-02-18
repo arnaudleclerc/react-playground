@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { call201 } from '../xhr/xhr-calls';
 import { trackPromise } from 'react-promise-tracker';
-
+import Register from './Register';
 
 export class Home extends Component {
 
@@ -15,9 +15,7 @@ export class Home extends Component {
 
     render() {
         return <div>
-            <button onClick={this.call201}>
-                Call 201
-            </button>
+            <Register />
         </div>
     }
 }

@@ -1,14 +1,14 @@
+import { Spinner } from "react-bootstrap";
 import { usePromiseTracker } from "react-promise-tracker";
-import { CradleLoader } from 'react-loader-spinner';
 import './spinner.css';
 
-export const Spinner: any = () => {
+export const LoadingIndicator: any = () => {
 
     const { promiseInProgress } = usePromiseTracker();
 
     return (
-        true && (
-            <CradleLoader ariaLabel="loading-indicator" />
+        promiseInProgress && (
+            <Spinner animation="border" />
         )
     );
 

@@ -1,6 +1,6 @@
-import axiosInstance from './axios-config';
 import { endpointConfiguration } from '../configuration/endpoints-config';
+import axios from 'axios';
 
 export const call201 = async () => {
-    return axiosInstance.get(`${endpointConfiguration.baseUri}/api/201`);
+    return axios.get(`${endpointConfiguration.baseUri}/api/201`);
 }

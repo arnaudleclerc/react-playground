@@ -1,0 +1,9 @@
+.registerForm {
+	width: 500px;
+	margin: auto;
+}
+
+.has-error .form-control {
+    border-color: #a94442;
+    border-width: 2px;
+}
